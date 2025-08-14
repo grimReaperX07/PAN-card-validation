@@ -1,0 +1,80 @@
+🆔 PAN Number Validation Project
+📌 Overview
+
+This project focuses on cleaning and validating Indian Permanent Account Numbers (PAN) from a dataset to 
+ensure they follow the official format.The dataset was processed using data cleaning techniques and 
+format validation rules, and categorized into Valid or Invalid PAN numbers.
+
+
+🎯 Objective
+
+Identify and handle missing or incomplete PAN numbers.
+
+Remove duplicates and fix formatting issues (spaces, letter case).
+
+Validate PAN numbers against official rules.
+
+Categorize data into Valid and Invalid PAN lists.
+
+Generate a summary report of the validation process.
+
+
+📂 Dataset
+
+File: PAN Number Validation Dataset.xlsx
+Contains: Raw PAN numbers of Indian nationals with potential errors such as:
+
+Missing values
+
+Duplicate entries
+
+Lowercase letters
+
+Invalid formats
+
+
+🛠 Steps Performed
+1. Data Cleaning and Preprocessing
+
+Removed leading/trailing spaces from PAN numbers.
+
+Converted all PAN numbers to uppercase.
+
+Checked and removed duplicate entries.
+
+Handled missing values appropriately.
+
+2. PAN Format Validation Rules
+
+A valid PAN must:
+
+Be exactly 10 characters long.
+
+Follow the format: AAAAA1234A
+
+First 5 characters: Uppercase alphabets (no same adjacent letters, no alphabetical sequences).
+
+Next 4 characters: Digits (no same adjacent numbers, no numerical sequences).
+
+Last 1 character: Uppercase alphabet.
+
+Example of a valid PAN: AHGVE1276F
+
+
+📊 Output & Report
+
+The project generates:
+
+Valid PAN list
+
+Invalid PAN list
+
+Summary Report containing:
+
+Total records processed
+
+Total valid PANs
+
+Total invalid PANs
+
+Total missing/incomplete PANs
